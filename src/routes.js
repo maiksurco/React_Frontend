@@ -18,6 +18,7 @@
 import Dashboard from "views/Dashboard.js";
 import Icons from "views/Icons.js";
 import Map from "views/Map.js";
+import ListSocio from "views/MicroserBack/Socio/ListSocio";
 import Notifications from "views/Notifications.js";
 import Rtl from "views/Rtl.js";
 import TableList from "views/TableList.js";
@@ -71,6 +72,14 @@ var routes = [
     rtlName: "قائمة الجدول",
     icon: "tim-icons icon-puzzle-10",
     component: <TableList />,
+    layout: "/admin",
+  },
+  {
+    path: "/socio",
+    name: "Socio",
+    rtlName: "قائمة الجدول",
+    icon: "tim-icons icon-puzzle-10",
+    component: <ListSocio />,
     layout: "/admin",
   },
   {
